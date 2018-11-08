@@ -36,10 +36,13 @@ foreach($one as $a)
 	
 
 }
+
+
 $rrule = new RRule($ru);
 $i=0;
 foreach ( $rrule as $occurrence ) {
 	echo $occurrence->format('Y-m-d'),", <br>";
+	//
 	$i++;
 	if($i>200)
 	{
